@@ -44,6 +44,7 @@ function reduceArray ($acc,$curr){
 
 // $newArray = array_filter($testArray,"ageIncrement");
 // $newArray = array_map("ageIncrementMap",$testArray);
-$newArray = array_reduce($testArray,"reduceArray",[]);
+// $newArray = array_reduce($testArray,"reduceArray",[]);
+$newArray = array_column($testArray,'name');
 
 print_r($newArray);
