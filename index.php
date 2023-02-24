@@ -39,12 +39,21 @@ function reduceArray ($acc,$curr){
     array_push($acc,$curr['name']);
     return $acc;
 }; // reduce
-
 //==================================
 
 // $newArray = array_filter($testArray,"ageIncrement");
 // $newArray = array_map("ageIncrementMap",$testArray);
 // $newArray = array_reduce($testArray,"reduceArray",[]);
-$newArray = array_column($testArray,'name');
+// $newArray = array_column($testArray,'name');
 
-print_r($newArray);
+// print_r($newArray);
+
+//===================================================================================================
+
+$testStr = 'Hello';
+
+$podStr = 'e';
+
+$posPodStr = strpos($testStr,$podStr);
+
+print_r($posPodStr);
