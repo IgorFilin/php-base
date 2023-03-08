@@ -15,13 +15,7 @@
     </div>
     <div>
     <?php
-        include 'web-test-component-array.php';
-
-        for($i = 0;$i < count($array);$i++) {
-            $temp = $array[$i]['name'];
-              echo "<li>$temp</li>";
-        };
-
+        include 'web-test-component-array.php'
         ?>
     </div>
 </body>
